@@ -6,4 +6,6 @@ bot.on('message', async (ctx) => {
   ctx.reply('Hello Message');
 });
 
-bot.launch();
+bot.launch({
+  webhook: { domain: process.env.BOT_WEBHOOK || '' }
+});
