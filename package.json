@@ -8,5 +8,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "telegraf": "^4.10.0"
+  },
+  "devDependencies": {
+    "@vercel/node": "^2.6.2"
   }
 }
