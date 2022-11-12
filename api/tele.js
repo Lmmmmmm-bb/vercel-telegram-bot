@@ -5,7 +5,7 @@ const BOT_TOKEN = process.env.BOT_TOKEN;
 const bot = new Telegraf(BOT_TOKEN);
 
 bot.on('message', async (ctx) => {
-	ctx.reply(ctx.message.text);
+	ctx.sendMessage(ctx.chat.id, ctx.message.text);
 })
 
 export default async (request, response) => {
