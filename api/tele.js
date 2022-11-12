@@ -15,7 +15,8 @@ export default async (request, response) => {
 		bot.telegram.setWebhook(webhook);
 		response.send(`webhook set ${webhook}`);
 	} else {
-		bot.handleUpdate(request.body);
+		// bot.handleUpdate(request.body);
+		bot.telegram.sendMessage(request.body.message.chat.id, request.body.message.text);
 	}
 
 	response.send(`telegram bot say Hi.`);
