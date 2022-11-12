@@ -1,0 +1,12 @@
+{
+  "name": "vercel-telegram-bot",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "_lmmmmmm",
+  "keywords": [],
+  "description": "Vercel deploy Telegram bot example.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
