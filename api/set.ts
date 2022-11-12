@@ -10,5 +10,5 @@ export default async (request: VercelRequest, response: VercelResponse) => {
     response.send(`Set Webhook Success! ${wb}`);
   }
 
-  response.send(bot.telegram.getWebhookInfo());
+  response.send(await bot.telegram.getWebhookInfo());
 };
