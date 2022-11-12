@@ -10,9 +10,9 @@
     "vercel"
   ],
   "description": "Vercel deploy Telegram bot example.",
-  "main": "index.js",
   "scripts": {
     "start": "vercel dev",
+    "serve": "ngrok http 3000",
     "lint": "eslint --fix ."
   },
   "dependencies": {
