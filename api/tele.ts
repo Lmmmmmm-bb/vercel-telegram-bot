@@ -1,24 +1,10 @@
-import { Telegraf } from 'telegraf';
 import { VercelRequest, VercelResponse } from '@vercel/node';
-
-const BOT_TOKEN = process.env.BOT_TOKEN || '';
-
-const bot = new Telegraf(BOT_TOKEN);
-
-// bot.on('message', async (ctx) => {
-// 	ctx.sendMessage(ctx.chat.id, ctx.message.text);
-// })
+import { bot } from '../bot';
 
 export default async (request: VercelRequest, response: VercelResponse) => {
-  const { webhook } = request.query;
-
-  if (webhook && !Array.isArray(webhook)) {
-    bot.telegram.setWebhook(webhook);
-    response.send(`webhook set ${webhook}`);
-  } else {
-    // bot.handleUpdate(request.body);
-    bot.telegram.sendMessage(request.body.message.chat.id, request.body.message.text);
-  }
+  // bot.telegram.setWebhook('https://1d1d-119-123-207-235.jp.ngrok.io/api/tele');
+  await bot.handleUpdate(request.body);
+  // bot.telegram.sendMessage(request.body.message.chat.id, `${request.body.message.text}123`);
 
   response.send('telegram bot say Hi.');
 };
