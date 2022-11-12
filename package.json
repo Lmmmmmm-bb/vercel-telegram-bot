@@ -7,12 +7,13 @@
   "description": "Vercel deploy Telegram bot example.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "vercel dev"
   },
   "dependencies": {
     "telegraf": "^4.10.0"
   },
   "devDependencies": {
-    "@vercel/node": "^2.6.2"
+    "@vercel/node": "^2.6.2",
+    "vercel": "^28.4.17"
   }
 }
