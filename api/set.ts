@@ -8,7 +8,7 @@ export default async (request: VercelRequest, response: VercelResponse) => {
   if (wb && !Array.isArray(wb)) {
     await bot.telegram.setWebhook(wb);
     response.send(`Set Webhook Success! ${wb}`);
+  } else {
+    response.send(await bot.telegram.getWebhookInfo());
   }
-
-  response.send(await bot.telegram.getWebhookInfo());
 };
