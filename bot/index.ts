@@ -7,7 +7,7 @@ export const bot = new Telegraf(botToken);
 
 bot.on('text', async (ctx) => {
   const { message } = ctx;
-  ctx.reply(`Reply: ${message.text}`);
+  await ctx.reply(`Reply: ${message.text}`);
 });
 
 bot.launch({
