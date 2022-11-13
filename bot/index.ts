@@ -1,8 +1,9 @@
 import { Telegraf } from 'telegraf';
 
-const webhookDomain = `${process.env.BOT_WEBHOOK}?hash=${process.env.BOT_HASH}`;
+const botToken = process.env.BOT_TOKEN || '';
+const webhookDomain = process.env.BOT_WEBHOOK || '';
 
-export const bot = new Telegraf(process.env.BOT_TOKEN || '');
+export const bot = new Telegraf(botToken);
 
 bot.on('text', async (ctx) => {
   const { message } = ctx;
@@ -10,5 +11,5 @@ bot.on('text', async (ctx) => {
 });
 
 bot.launch({
-  webhook: { domain: webhookDomain || '' }
+  webhook: { domain: webhookDomain }
 });
