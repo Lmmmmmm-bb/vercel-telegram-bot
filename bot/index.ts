@@ -1,7 +1,7 @@
 import { Telegraf } from 'telegraf';
 
-const botToken = process.env.BOT_TOKEN || '';
-const webhookDomain = process.env.BOT_WEBHOOK || '';
+export const botToken = process.env.BOT_TOKEN || '';
+export const webhookDomain = process.env.BOT_WEBHOOK || '';
 
 export const bot = new Telegraf(botToken);
 
