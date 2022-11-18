@@ -6,12 +6,12 @@ Deploy your Telegram bot to Vercel.
 
 > It is strongly recommended to use **degit** to clone this repository. It will delete **README.md** and **degit.json** file when clone.
 
-# Before Develop
+## Before Develop
 
 1. Copy `.env.example` to `.env`. **Do not upload `.env` file to your repository**.
 2. Setup bot token, webhook domain & path.
 
-# Get started
+## Get started
 
 1. Clone the template repo & Initialize git repository.
 
@@ -33,7 +33,7 @@ Deploy your Telegram bot to Vercel.
 > pnpm start
 ```
 
-# Deploy to Vercel
+## Deploy to Vercel
 
 1. Setup Vercel project.
 2. Setup your project **Environment Variables** in Vercel. Same as your `.env` file.
