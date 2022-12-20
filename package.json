@@ -1,6 +1,6 @@
 {
   "name": "vercel-telegram-bot",
-  "version": "1.0.0",
+  "packageManager": "pnpm@7.18.2",
   "license": "MIT",
   "author": "_lmmmmmm",
   "type": "module",
@@ -9,7 +9,7 @@
     "telegram",
     "vercel"
   ],
-  "description": "Vercel deploy Telegram bot example.",
+  "description": "Vercel deploy Telegram bot template.",
   "scripts": {
     "start": "vercel dev",
     "serve": "ngrok http 3000",
@@ -19,6 +19,7 @@
     "telegraf": "^4.10.0"
   },
   "devDependencies": {
+    "@types/node": "^18.11.17",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
     "@typescript-eslint/parser": "^5.42.1",
     "@vercel/node": "^2.6.2",
