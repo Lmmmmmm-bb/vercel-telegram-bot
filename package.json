@@ -1,7 +1,7 @@
 {
   "name": "vercel-telegram-bot",
   "type": "module",
-  "packageManager": "pnpm@8.12.1",
+  "packageManager": "pnpm@8.15.5",
   "description": "Vercel deploy Telegram bot template.",
   "author": "_lmmmmmm",
   "license": "MIT",
@@ -16,15 +16,15 @@
     "lint": "eslint --fix ."
   },
   "dependencies": {
-    "telegraf": "^4.15.3"
+    "telegraf": "^4.16.3"
   },
   "devDependencies": {
     "@lmmmmmm/eslint-config": "0.3.0",
-    "@types/node": "^20.10.5",
-    "@vercel/node": "^3.0.14",
-    "eslint": "^8.56.0",
+    "@types/node": "^20.11.30",
+    "@vercel/node": "^3.0.25",
+    "eslint": "^8.57.0",
     "ngrok": "^5.0.0-beta.2",
-    "typescript": "^5.3.3",
-    "vercel": "^32.7.2"
+    "typescript": "^5.4.3",
+    "vercel": "^33.6.2"
   }
 }
